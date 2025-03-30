@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Grey-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 384px;
+    background-color: var(--Grey-800);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.container img{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+.container h1{
+    font-size: 24px;
+    font-family: "Inter SemiBold" ;
+    color: var(--White);
+    height: 36px;
+    width: 100%;
+    text-align:center;
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Inter SemiBold';
+    src: url('assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Inter Regular';
+    src: url('assets/fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.container .location{
+    height: 21px;
+    color: var(--Green);
+    margin-top: 4px;
+}
+
+.container .description{
+    font-size: 14px;
+    font-family: "Inter Regular";
+    text-align: center;
+    margin-top: 24px;
+    color: var(--White);
+
+}
+
+.container .buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 16px;
+}
+
+.container .buttons .button{
+    height: 45px;
+    width: 100%;
+    background-color: var(--Grey-700);
+    text-align: center;
+    line-height: 45px;
+    font-family: "Inter Bold";
+    font-size: 14px;
+    color: var(--White);
+    border-radius: 8px;
+    cursor: pointer;
+}
