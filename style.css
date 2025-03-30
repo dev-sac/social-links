@@ -72,6 +72,7 @@ body{
     height: 21px;
     color: var(--Green);
     margin-top: 4px;
+    font-size: 14px;
 }
 
 .container .description{
