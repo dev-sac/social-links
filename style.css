@@ -108,4 +108,5 @@ body{
 
 .container .buttons .button:hover{
     background-color: var(--Green);
+    color: black;
 }
